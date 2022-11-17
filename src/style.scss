@@ -1,40 +1,50 @@
 .btn-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding-bottom: 2rem;
 
-    button {
-        border: none;
-        padding: 0.5rem;
-        box-sizing: border-box;
-        border-radius: 5px;
-        background: #1f74af;
-        color: white;
-    }
+	button {
+		border: none;
+		padding: 0.5rem;
+		box-sizing: border-box;
+		border-radius: 5px;
+		background: #1f74af;
+		color: white;
+	}
 
-    p {
-        margin: 0;
-    }
-  
+	p {
+		margin: 0;
+	}
 }
 
-.ui.modal.faves-modal {
-    text-align: center;
-    border: 1px solid #FFE81F;
+.ui {
+	&.modal.faves-modal {
+		text-align: center;
+		border: 1px solid #ffe81f;
 
-    .header, .content {
-        background: #111;
-        color: #FFE81F;
-    }
+		.header,
+		.content {
+			background: #111;
+			color: #ffe81f;
+		}
+
+		&.divided.horizontal.list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+	}
 }
 
-@media (max-width:640px) {
-    .ui {
-        .buttons {
-            flex-direction: column;
-            gap: 1rem;
-        }
-    }
+@media (max-width: 640px) {
+	.ui {
+		.buttons {
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
 }
