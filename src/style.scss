@@ -30,14 +30,14 @@
 			color: #ffe81f;
 		}
 
-		&.divided.horizontal.list {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 1rem;
-		}
 	}
+    &.divided.horizontal.list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 640px) {
